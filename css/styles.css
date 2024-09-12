@@ -31,14 +31,14 @@ nav ul li {
 nav ul li a {
     color: yellow;
     text-decoration: none;
-    padding: 10px 20px; /* Añadimos padding para que el sombreado se vea mejor */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor de los enlaces */
-    transition: box-shadow 0.3s ease; /* Transición suave en el sombreado */
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); 
+    transition: box-shadow 0.3s ease; 
 }
 
 nav ul li a:hover {
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7); /* Aumentamos la sombra al hacer hover */
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7); 
 }
 
 main {
