@@ -1,3 +1,5 @@
+/* Estilos de la web */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -65,7 +67,7 @@ img {
     height: auto;
 }
 
-/* Estilos para tabletas */
+/* Estilos para tablets */
 @media (min-width: 600px) and (max-width: 1024px) {
     header {
         padding: 10px 0;
@@ -116,7 +118,7 @@ img {
     }
 }
 
-/* Estilos para móviles */
+/* Estilos para mobile */
 @media (max-width: 599px) {
     header {
         padding: 8px 0;
