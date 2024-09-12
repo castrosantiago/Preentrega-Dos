@@ -2,33 +2,53 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     background-color: blue;
     color: yellow;
-    padding: 10px 0;
+    padding: 5px 0;
     text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 10px;
 }
 
 nav ul li a {
     color: yellow;
     text-decoration: none;
+    padding: 10px 20px; /* Añadimos padding para que el sombreado se vea mejor */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor de los enlaces */
+    transition: box-shadow 0.3s ease; /* Transición suave en el sombreado */
+}
+
+nav ul li a:hover {
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7); /* Aumentamos la sombra al hacer hover */
 }
 
 main {
-    padding: 20px;
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 footer {
@@ -36,12 +56,89 @@ footer {
     color: yellow;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
-    bottom: 0;
+    position: relative;
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
+
+/* Estilos para tabletas */
+@media (min-width: 600px) and (max-width: 1024px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    main {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 15px 0;
+    }
+}
+
+/* Estilos para desktop */
+@media (min-width: 1025px) {
+    header {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    main {
+        padding: 20px;
+        font-size: 1.4rem;
+    }
+
+    footer {
+        padding: 20px 0;
+        font-size: 1.1rem;
+    }
+}
+
+/* Estilos para móviles */
+@media (max-width: 599px) {
+    header {
+        padding: 8px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 10px 0;
+    }
+}
+
+
