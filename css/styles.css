@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Fondo negro */
+    background-image: url(https://clubatletico.bocajuniors.com.ar/storage/sports/July2023/56drA1BP4Fo5vymsMpJ3.jpg);
     color: #fff; /* Texto blanco */
     display: flex;
     flex-direction: column;
@@ -12,10 +12,11 @@ body {
 }
 
 header {
+    font-family: 'Times New Roman', Times, serif;
     background-color: blue;
     color: yellow;
     padding: 5px 0;
-    text-align: center;
+    text-align: center;  
 }
 
 nav ul {
